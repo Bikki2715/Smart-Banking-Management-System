@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Transaction Filter - SmartBank Admin</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="nav-logo">
+            SmartBank Admin
+        </div>
+
+        <div class="nav-links">
+
+            <a href="admin-dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="admin-account-status.html">
+                Account Status
+            </a>
+
+            <a href="admin-customer-search.html">
+                Customer Search
+            </a>
+
+            <a href="admin-customer-details.html">
+                Customer Details
+            </a>
+
+            <a href="admin-transaction-search.html">
+                Transaction Search
+            </a>
+
+            <a href="admin-transaction-filter.html">
+                Transaction Filter
+            </a>
+
+            <a href="admin-activity-log.html">
+                Activity Log
+            </a>
+
+            <a href="admin-system-health.html">
+                System Health
+            </a>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a
+                href="#"
+                id="adminLogoutBtn"
+            >
+                Logout
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <main>
+
+        <section class="dashboard-section">
+
+            <div class="dashboard-container">
+
+                <h1>
+                    Admin Transaction Filter
+                </h1>
+
+                <p>
+                    Filter banking transactions using account number,
+                    transaction type, and transaction date.
+                </p>
+
+
+                <form
+                    id="adminTransactionFilterForm"
+                    class="dashboard-form"
+                >
+
+                    <label for="filterAccountNumber">
+                        Account Number
+                    </label>
+
+                    <input
+                        type="text"
+                        id="filterAccountNumber"
+                        placeholder="Enter account number"
+                    >
+
+
+                    <label for="filterTransactionType">
+                        Transaction Type
+                    </label>
+
+                    <select
+                        id="filterTransactionType"
+                    >
+
+                        <option value="">
+                            All Transaction Types
+                        </option>
+
+                        <option value="Deposit">
+                            Deposit
+                        </option>
+
+                        <option value="Withdrawal">
+                            Withdrawal
+                        </option>
+
+                        <option value="Transfer">
+                            Transfer
+                        </option>
+
+                        <option value="Initial Deposit">
+                            Initial Deposit
+                        </option>
+
+                    </select>
+
+
+                    <label for="filterTransactionDate">
+                        Transaction Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="filterTransactionDate"
+                    >
+
+
+                    <button
+                        type="submit"
+                        class="primary-btn"
+                    >
+                        Apply Filter
+                    </button>
+
+                    <button
+                        type="button"
+                        id="clearTransactionFilter"
+                        class="secondary-btn"
+                    >
+                        Clear Filter
+                    </button>
+
+                </form>
+
+
+                <p id="transactionFilterMessage"></p>
+
+
+                <div
+                    id="transactionFilterResults"
+                    class="dashboard-grid"
+                >
+
+                </div>
+
+
+                <div class="dashboard-actions">
+
+                    <a
+                        href="admin-dashboard.html"
+                        class="primary-btn"
+                    >
+                        Back to Admin Dashboard
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 SmartBank. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

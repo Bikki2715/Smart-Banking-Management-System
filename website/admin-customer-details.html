@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Customer Details - SmartBank</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="nav-logo">
+            SmartBank Admin
+        </div>
+
+        <div class="nav-links">
+
+            <a href="admin-dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="admin-account-status.html">
+                Account Status
+            </a>
+
+            <a href="admin-customer-search.html">
+                Customer Search
+            </a>
+
+            <a href="admin-activity-log.html">
+                Activity Log
+            </a>
+
+            <a href="admin-system-health.html">
+                System Health
+            </a>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="#" id="adminLogoutBtn">
+                Logout
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <main>
+
+        <section class="dashboard-section">
+
+            <div class="dashboard-container">
+
+                <h1>
+                    Customer Details
+                </h1>
+
+                <p>
+                    View complete customer account information.
+                </p>
+
+
+                <form id="adminCustomerDetailsForm">
+
+                    <input
+                        type="number"
+                        id="detailsCustomerAccount"
+                        placeholder="Enter account number"
+                        required
+                    >
+
+                    <button
+                        type="submit"
+                        class="dashboard-btn"
+                    >
+                        View Customer Details
+                    </button>
+
+                </form>
+
+
+                <p id="customerDetailsMessage">
+                    Enter an account number to view details.
+                </p>
+
+
+                <div class="dashboard-grid">
+
+
+                    <div class="dashboard-service-card">
+
+                        <div class="service-icon">
+                            👤
+                        </div>
+
+                        <h3>
+                            Customer Name
+                        </h3>
+
+                        <p id="detailsCustomerName">
+                            Not selected
+                        </p>
+
+                    </div>
+
+
+                    <div class="dashboard-service-card">
+
+                        <div class="service-icon">
+                            🏦
+                        </div>
+
+                        <h3>
+                            Account Number
+                        </h3>
+
+                        <p id="detailsCustomerAccountNumber">
+                            Not selected
+                        </p>
+
+                    </div>
+
+
+                    <div class="dashboard-service-card">
+
+                        <div class="service-icon">
+                            📧
+                        </div>
+
+                        <h3>
+                            Email
+                        </h3>
+
+                        <p id="detailsCustomerEmail">
+                            Not selected
+                        </p>
+
+                    </div>
+
+
+                    <div class="dashboard-service-card">
+
+                        <div class="service-icon">
+                            📱
+                        </div>
+
+                        <h3>
+                            Mobile
+                        </h3>
+
+                        <p id="detailsCustomerMobile">
+                            Not selected
+                        </p>
+
+                    </div>
+
+
+                    <div class="dashboard-service-card">
+
+                        <div class="service-icon">
+                            💰
+                        </div>
+
+                        <h3>
+                            Balance
+                        </h3>
+
+                        <p id="detailsCustomerBalance">
+                            Not selected
+                        </p>
+
+                    </div>
+
+
+                    <div class="dashboard-service-card">
+
+                        <div class="service-icon">
+                            🟢
+                        </div>
+
+                        <h3>
+                            Account Status
+                        </h3>
+
+                        <p id="detailsCustomerStatus">
+                            Not selected
+                        </p>
+
+                    </div>
+
+
+                    <div class="dashboard-service-card">
+
+                        <div class="service-icon">
+                            📅
+                        </div>
+
+                        <h3>
+                            Created At
+                        </h3>
+
+                        <p id="detailsCustomerCreatedAt">
+                            Not selected
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+                <br>
+
+
+                <a
+                    href="admin-dashboard.html"
+                    class="dashboard-btn"
+                >
+                    Back to Admin Dashboard
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 SmartBank. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

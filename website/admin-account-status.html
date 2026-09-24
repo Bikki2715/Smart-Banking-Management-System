@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Account Status</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Smart Banking
+        </div>
+
+        <div class="nav-links">
+
+            <a href="admin-dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="admin-account-status.html">
+                Account Status Management
+            </a>
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="#" id="adminLogoutBtn">
+                Logout
+            </a>
+
+            <a href="admin-activity-log.html">
+                Activity Log
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <div class="form-container">
+
+        <h1>
+            Change Account Status
+        </h1>
+
+        <p>
+            Update the status of a customer account.
+        </p>
+
+
+        <form id="adminStatusForm">
+
+            <label for="adminAccountNumber">
+                Customer Account Number
+            </label>
+
+            <input
+                type="text"
+                id="adminAccountNumber"
+                placeholder="Enter account number"
+                maxlength="10"
+                required
+            >
+
+
+            <label for="adminAccountStatus">
+                New Account Status
+            </label>
+
+            <select
+                id="adminAccountStatus"
+                required
+            >
+
+                <option value="">
+                    Select Status
+                </option>
+
+                <option value="Active">
+                    Active
+                </option>
+
+                <option value="Suspended">
+                    Suspended
+                </option>
+
+                <option value="Closed">
+                    Closed
+                </option>
+
+            </select>
+
+
+            <button
+                type="submit"
+                class="deposit-btn"
+            >
+                Change Account Status
+            </button>
+
+        </form>
+
+
+    <div class = "dashboard-service-card">
+        <div class = "service-icon">
+            👤
+        </div>
+        <h3> Customer Name </h3>
+        <p id = "adminCustomerName"> Not selected </p>
+
+    </div>
+
+    <div class = "dashboard-service-card">
+        <div class = "service-icon">
+            🏦
+        </div>
+        <h3>Account Number</h3>
+        <p id = "adminCustomerAccount">Not selected</p>
+    </div>
+
+    <div class = "dashboard-service-card">
+        <div class = "service-icon">
+            🟢
+        </div>
+        <h3>Current Status</h3>
+        <p id = "adminCurrentStatus">Not selected</p>
+    </div>
+
+    <p id = "adminStatusMessage"></p>
+
+
+        <a
+            href="dashboard.html"
+            class="back-link"
+        >
+            Back to Dashboard
+        </a>
+
+    </div>
+
+
+    <footer>
+
+        <p>
+            © 2026 Smart Banking Management System
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

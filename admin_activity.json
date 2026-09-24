@@ -1,0 +1,157 @@
+[
+    {
+        "action": "Backup Data",
+        "details": "Admin performed a customer data backup.",
+        "date": "2026-09-01 22:35:57"
+    },
+    {
+        "action": "Deactivate Account",
+        "details": "Admin deactivated account 100015 belonging to bhavani.",
+        "date": "2026-09-01 22:39:59"
+    },
+    {
+        "action": "Activate Account",
+        "details": "Admin activated account 100015 belonging to bhavani.",
+        "date": "2026-09-01 22:40:17"
+    },
+    {
+        "action": "Close Customer Account",
+        "details": "Admin closed account 100015 belonging to bhavani.",
+        "date": "2026-09-01 22:42:04"
+    },
+    {
+        "action": "Activate Account",
+        "details": "Admin activated account 100015 belonging to bhavani.",
+        "date": "2026-09-01 22:42:56"
+    },
+    {
+        "action": "Search Customer",
+        "details": "Admin searched customer account 100016 belonging to sivakumari.",
+        "date": "2026-09-01 22:46:15"
+    },
+    {
+        "action": "Search Transaction by ID",
+        "details": "Admin searched for transaction ID TXN-20260901-212808048534. Transaction was found.",
+        "date": "2026-09-01 22:54:14"
+    },
+    {
+        "action": "Advanced Customer Search",
+        "details": "Admin searched customers by Name: sivakumari. 1 customer(s) found.",
+        "date": "2026-09-01 22:57:40"
+    },
+    {
+        "action": "Admin View Customer Details",
+        "details": "Admin viewed details of customer sivakumari, account 100016. Total transactions: 5.",
+        "date": "2026-09-01 22:59:42"
+    },
+    {
+        "action": "Search Customer",
+        "details": "Admin searched customer account 100018 belonging to Bikki Dhanalakshmi.",
+        "date": "2026-09-03 10:16:34"
+    },
+    {
+        "action": "Search Transactions",
+        "details": "Admin searched for Deposit transactions. Matching transactions were found.",
+        "date": "2026-09-03 10:19:48"
+    },
+    {
+        "action": "Search Transactions",
+        "details": "Admin searched for Withdrawal transactions. Matching transactions were found.",
+        "date": "2026-09-03 10:19:51"
+    },
+    {
+        "action": "Search Transactions",
+        "details": "Admin searched for Transfer transactions. Matching transactions were found.",
+        "date": "2026-09-03 10:19:53"
+    },
+    {
+        "action": "Filter Transactions",
+        "details": "Admin filtered all transactions. 11 matching transaction(s) found.",
+        "date": "2026-09-03 10:25:49"
+    },
+    {
+        "action": "Search Transaction by ID",
+        "details": "Admin searched for transaction ID TXN-20260902-0001. Transaction was found.",
+        "date": "2026-09-03 10:29:11"
+    },
+    {
+        "action": "Search Transaction by ID",
+        "details": "Admin searched for transaction ID 456, but the transaction was not found.",
+        "date": "2026-09-03 10:29:31"
+    },
+    {
+        "action": "Deactivate Account",
+        "details": "Admin deactivated account 100019 (Bikki Lakshmidevi).",
+        "date": "2026-09-03 10:32:43"
+    },
+    {
+        "action": "Close Customer Account",
+        "details": "Admin closed account 100019 belonging to Bikki Lakshmidevi.",
+        "date": "2026-09-03 10:35:59"
+    },
+    {
+        "action": "Advanced Customer Search",
+        "details": "Admin searched customers by Name: Bikki Dhanalakshmi. 2 customer(s) found.",
+        "date": "2026-09-03 10:52:26"
+    },
+    {
+        "action": "Admin View Customer Details",
+        "details": "Admin viewed details of customer Bikki Dhanalakshmi, account 100018. Total transactions: 7.",
+        "date": "2026-09-03 10:54:38"
+    },
+    {
+        "action": "Validate Transaction",
+        "details": "Admin attempted to validate transaction ID TXN-20260902-0001, but it was not found.",
+        "date": "2026-09-03 10:57:52"
+    },
+    {
+        "action": "Validate Transaction",
+        "details": "Admin attempted to validate transaction ID TXN-20260902-212808048545, but it was not found.",
+        "date": "2026-09-03 10:58:21"
+    },
+    {
+        "action": "Validate Transaction",
+        "details": "Admin attempted to validate transaction ID TXN-20260902-212808048542, but it was not found.",
+        "date": "2026-09-03 11:13:55"
+    },
+    {
+        "action": "Validate Transaction",
+        "details": "Admin attempted to validate transaction ID TXN-20260902-212808048542, but it was not found.",
+        "date": "2026-09-03 11:19:57"
+    },
+    {
+        "action": "Validate Transaction",
+        "details": "Admin attempted to validate transaction ID TXN-20260902-212808048542, but it was not found.",
+        "date": "2026-09-03 11:21:23"
+    },
+    {
+        "action": "Validate Transaction",
+        "details": "Admin attempted to validate transaction ID TXN-20260902-212808048542, but it was not found.",
+        "date": "2026-09-03 11:24:33"
+    },
+    {
+        "action": "Validate Transaction",
+        "details": "Admin attempted to validate transaction ID TXN-20260902-212808048544, but it was not found.",
+        "date": "2026-09-03 11:41:21"
+    },
+    {
+        "action": "Validate Transaction",
+        "details": "Admin validated transaction ID TXN-20260902-212808048544. Result: INVALID.",
+        "date": "2026-09-03 11:47:49"
+    },
+    {
+        "action": "Validate Transaction",
+        "details": "Admin validated transaction ID TXN-20260902-212808048544. Result: VALID.",
+        "date": "2026-09-03 11:53:09"
+    },
+    {
+        "action": "Check Transaction ID",
+        "details": "Admin checked transaction ID TXN-20260902-212808048544. Result: Transaction ID exists.",
+        "date": "2026-09-03 12:00:39"
+    },
+    {
+        "action": "Check Customer Account Status",
+        "details": "Admin checked account 100018. Current status: Active.",
+        "date": "2026-09-03 12:04:17"
+    }
+]

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Admin Dashboard - SmartBank</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         NAVIGATION BAR
+         ========================================= -->
+
+    <nav class="navbar">
+
+        <div class="nav-logo">
+            SmartBank Admin
+        </div>
+
+        <div class="nav-links">
+
+            <a href="admin-dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="admin-account-status.html">
+                Account Status
+            </a>
+
+            <a href="admin-activity-log.html">
+                Activity Log
+            </a>
+
+            <a href="admin-system-health.html">
+                System Health
+            </a>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a
+                href="#"
+                id="adminLogoutBtn"
+            >
+                Logout
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================================
+         MAIN ADMIN DASHBOARD
+         ========================================= -->
+
+    <main>
+
+        <section class="dashboard-section">
+
+            <div class="dashboard-container">
+
+                <h1>
+                    Admin Dashboard
+                </h1>
+
+                <p>
+                    Manage and monitor the SmartBank system.
+                </p>
+
+
+                <!-- =========================================
+                     DASHBOARD CARDS
+                     ========================================= -->
+
+                <div class="dashboard-grid">
+
+
+                    <!-- =====================================
+                         TOTAL CUSTOMERS
+                         ===================================== -->
+
+                    <div class="dashboard-service-card">
+
+                        <div class="service-icon">
+                            👥
+                        </div>
+
+                        <h3>
+                            Total Customers
+                        </h3>
+
+                        <p id="totalCustomers">
+                            Loading...
+                        </p>
+
+                    </div>
+
+
+                    <!-- =====================================
+                         TOTAL BALANCE
+                         ===================================== -->
+
+                    <div class="dashboard-service-card">
+
+                        <div class="service-icon">
+                            💰
+                        </div>
+
+                        <h3>
+                            Total Balance
+                        </h3>
+
+                        <p id="totalBalance">
+                            Loading...
+                        </p>
+
+                    </div>
+
+
+                    <!-- =====================================
+                         TOTAL TRANSACTIONS
+                         ===================================== -->
+
+                    <div class="dashboard-service-card">
+
+                        <div class="service-icon">
+                            💳
+                        </div>
+
+                        <h3>
+                            Total Transactions
+                        </h3>
+
+                        <p id="totalTransactions">
+                            Loading...
+                        </p>
+
+                    </div>
+
+
+                    <!-- =====================================
+                         ACCOUNT STATUS
+                         ===================================== -->
+
+                    <div
+                        class="dashboard-service-card"
+                        id="adminAccountStatusCard"
+                    >
+
+                        <div class="service-icon">
+                            ⚙️
+                        </div>
+
+                        <h3>
+                            Account Status
+                        </h3>
+
+                        <p>
+                            Manage customer account status.
+                        </p>
+
+                    </div>
+
+
+                    <!-- =====================================
+                         CUSTOMER SEARCH
+                         ===================================== -->
+
+                    <div
+                        class="dashboard-service-card"
+                        id="adminCustomerSearchCard"
+                    >
+
+                        <div class="service-icon">
+                            🔍
+                        </div>
+
+                        <h3>
+                            Customer Search
+                        </h3>
+
+                        <p>
+                            Search and view customer details.
+                        </p>
+
+                    </div>
+
+                    <div 
+                        class="dashboard-service-card"
+                        id="adminCustomerDetailsCard"
+                    >
+                        <div class="service-icon">
+                            👤
+                            </div>
+
+                        <h3>
+                            Customer Details
+                        </h3>
+                        <p>
+                            View complete customer account details.
+                        </p>
+                    </div>
+                    <!-- =====================================
+                           TRANSACTION SEARCH
+                    ===================================== -->
+
+                    <div
+                        class="dashboard-service-card"
+                        id="adminTransactionSearchCard"
+                    >
+
+                        <div class="service-icon">
+                            🔎
+                        </div>
+
+                        <h3>
+                            Transaction Search
+                        </h3>
+
+                        <p>
+                            Search complete transaction details using a transaction ID.
+                        </p>
+
+                    </div>
+                    <!-- =====================================
+                        TRANSACTION FILTER
+                    ===================================== -->
+                    <div
+                        class="dashboard-service-card"
+                        id="adminTransactionFilterCard"
+                    >
+                        <div class="service-icon">
+                            📑
+                        </div>
+
+                        <h3>
+                            Transaction Filter
+                        </h3>
+                        <p>
+                            Filter transactions by account, type,and date.
+                        </p>
+                    </div>
+                    <!-- =====================================
+                         ACTIVITY LOG
+                         ===================================== -->
+
+                    <div
+                        class="dashboard-service-card"
+                        id="adminActivityCard"
+                    >
+
+                        <div class="service-icon">
+                            📋
+                        </div>
+
+                        <h3>
+                            Activity Log
+                        </h3>
+
+                        <p>
+                            View administrator activities.
+                        </p>
+
+                    </div>
+
+
+                    <!-- =====================================
+                         SYSTEM HEALTH
+                         ===================================== -->
+
+                    <div
+                        class="dashboard-service-card"
+                        id="adminSystemHealthCard"
+                    >
+
+                        <div class="service-icon">
+                            🛡️
+                        </div>
+
+                        <h3>
+                            System Health
+                        </h3>
+
+                        <p>
+                            Monitor banking system health.
+                        </p>
+
+                    </div>
+
+
+                    <!-- =====================================
+                         BANKING SUMMARY
+                         ===================================== -->
+
+                    <div
+                        class="dashboard-service-card"
+                        id="adminBankingSummaryCard"
+                    >
+
+                        <div class="service-icon">
+                            📊
+                        </div>
+
+                        <h3>
+                            Banking Summary
+                        </h3>
+
+                        <p>
+                            View overall deposits, withdrawals,
+                            transfers, and balances.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         FOOTER
+         ========================================= -->
+
+    <footer>
+
+        <p>
+            © 2026 SmartBank. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- =========================================
+         JAVASCRIPT
+         ========================================= -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Transfer Money | SmartBank</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body class="dashboard-page">
+
+
+    <!-- ================================
+         NAVBAR
+    ================================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🏦 SmartBank
+        </div>
+
+        <div class="nav-links">
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="login.html">
+                Logout
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- ================================
+         TRANSFER MONEY
+    ================================= -->
+
+    <main class="dashboard-main">
+
+        <section class="dashboard-welcome">
+
+            <p class="dashboard-label">
+                SMARTBANK
+            </p>
+
+            <h1>
+                Transfer Money 💸
+            </h1>
+
+            <p>
+                Transfer money securely to another SmartBank account.
+            </p>
+
+        </section>
+
+
+
+        <div class="deposit-container">
+
+            <div class="deposit-card">
+
+                <div class="deposit-icon">
+                    💸
+                </div>
+
+                <h2>
+                    Send Money
+                </h2>
+
+                <p class="deposit-description">
+                    Enter the receiver's account number and
+                    the amount you want to transfer.
+                </p>
+
+
+
+                <!-- SENDER ACCOUNT -->
+
+                <div class="deposit-account">
+
+                    <p>
+                        Your Account Number
+                    </p>
+
+                    <strong id="transferSenderAccount">
+                        Loading...
+                    </strong>
+
+                </div>
+
+
+
+                <!-- CURRENT BALANCE -->
+
+                <div class="deposit-account">
+
+                    <p>
+                        Available Balance
+                    </p>
+
+                    <strong id="transferCurrentBalance">
+                        Loading...
+                    </strong>
+
+                </div>
+
+
+
+                <!-- TRANSFER FORM -->
+
+                <form id="transferForm">
+
+                    <div class="form-group">
+
+                        <label for="receiverAccount">
+                            Receiver Account Number
+                        </label>
+
+                        <input
+                            type="text"
+                            id="receiverAccount"
+                            maxlength="10"
+                            placeholder="Enter receiver account number"
+                            required
+                        >
+                        <p id = "receiverName"></p>
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="transferAmount">
+                            Transfer Amount
+                        </label>
+
+                        <input
+                            type="number"
+                            id="transferAmount"
+                            min="1"
+                            step="0.01"
+                            placeholder="Enter amount"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <button
+                        type="submit"
+                        class="deposit-btn"
+                    >
+                        Transfer Money
+                    </button>
+
+                </form>
+
+
+
+                <p
+                    id="transferMessage"
+                    class="deposit-message"
+                ></p>
+
+
+
+                <div class="dashboard-back">
+
+                    <a href="dashboard.html">
+                        ← Back to Dashboard
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- ================================
+         FOOTER
+    ================================= -->
+
+    <footer class="dashboard-footer">
+
+        <p>
+            © 2026 SmartBank. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

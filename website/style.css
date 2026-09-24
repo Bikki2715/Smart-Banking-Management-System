@@ -1,0 +1,1746 @@
+/* =========================================
+   SMARTBANK - GLOBAL STYLES
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f5f8fc;
+    color: #172033;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================================
+   NAVIGATION BAR
+========================================= */
+
+.navbar {
+    width: 100%;
+    height: 76px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e8edf5;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 24px;
+    font-weight: 800;
+
+    color: #173b73;
+}
+
+.logo-icon {
+    font-size: 27px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #536174;
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #1769e0;
+}
+
+.nav-login {
+    padding: 10px 20px;
+
+    border: 1px solid #1769e0;
+
+    border-radius: 8px;
+
+    color: #1769e0 !important;
+}
+
+.nav-login:hover {
+    background: #1769e0;
+    color: white !important;
+}
+
+.nav-register {
+    padding: 11px 21px;
+
+    background: #1769e0;
+
+    color: white !important;
+
+    border-radius: 8px;
+}
+
+.nav-register:hover {
+    background: #0f56bd;
+}
+
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.hero {
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 7%;
+
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(55, 130, 240, 0.13),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #f5f9ff,
+            #edf4fc
+        );
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 1250px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 0.9fr;
+
+    align-items: center;
+
+    gap: 80px;
+}
+
+.hero-small-title {
+    color: #1769e0;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 18px;
+}
+
+.hero-text h1 {
+    font-size: clamp(42px, 5vw, 68px);
+
+    line-height: 1.08;
+
+    color: #13233d;
+
+    margin-bottom: 25px;
+}
+
+.hero-text h1 span {
+    display: block;
+
+    color: #1769e0;
+}
+
+.hero-description {
+    max-width: 600px;
+
+    font-size: 18px;
+
+    color: #657287;
+
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+
+    gap: 16px;
+
+    flex-wrap: wrap;
+}
+
+.primary-btn,
+.secondary-btn {
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    border-radius: 9px;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+.primary-btn {
+    background: #1769e0;
+
+    color: white;
+
+    box-shadow: 0 8px 20px rgba(23, 105, 224, 0.25);
+}
+
+.primary-btn:hover {
+    background: #0f56bd;
+
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    background: white;
+
+    color: #1769e0;
+
+    border: 1px solid #cddcf1;
+}
+
+.secondary-btn:hover {
+    border-color: #1769e0;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   BANK CARD
+========================================= */
+
+.hero-card-container {
+    position: relative;
+
+    min-height: 390px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.bank-card {
+    width: 390px;
+
+    height: 235px;
+
+    padding: 28px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #163f7a,
+            #1769e0
+        );
+
+    color: white;
+
+    box-shadow:
+        0 25px 50px rgba(24, 64, 120, 0.28);
+
+    transform: rotate(-4deg);
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.card-top {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.card-chip {
+    font-size: 26px;
+
+    opacity: 0.9;
+}
+
+.card-number {
+    margin-top: 48px;
+
+    font-size: 22px;
+
+    letter-spacing: 3px;
+
+    font-family: monospace;
+}
+
+.card-bottom {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 27px;
+}
+
+.card-bottom div {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.card-bottom small {
+    font-size: 8px;
+
+    opacity: 0.7;
+
+    letter-spacing: 1px;
+}
+
+.card-bottom strong {
+    font-size: 12px;
+
+    margin-top: 3px;
+}
+
+.balance-card {
+    position: absolute;
+
+    right: 5%;
+
+    bottom: 5px;
+
+    width: 250px;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    background: white;
+
+    box-shadow:
+        0 18px 40px rgba(30, 55, 90, 0.14);
+
+    z-index: 3;
+}
+
+.balance-card p {
+    color: #78869a;
+
+    font-size: 13px;
+
+    margin-bottom: 5px;
+}
+
+.balance-card h2 {
+    color: #172c4f;
+
+    font-size: 28px;
+
+    margin-bottom: 4px;
+}
+
+.balance-card span {
+    color: #1769e0;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   SECTION COMMON
+========================================= */
+
+.about-section,
+.services-section,
+.contact-section {
+    padding: 100px 7%;
+}
+
+.section-heading {
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: 0 auto 55px;
+}
+
+.section-heading p {
+    color: #1769e0;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+.section-heading h2 {
+    font-size: 38px;
+
+    color: #172b4d;
+
+    margin-bottom: 12px;
+}
+
+.section-heading span {
+    color: #718096;
+
+    font-size: 16px;
+}
+
+
+/* =========================================
+   ABOUT SECTION
+========================================= */
+
+.about-section {
+    background: white;
+}
+
+.about-content {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.about-box {
+    padding: 35px 28px;
+
+    border: 1px solid #e7edf5;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    transition: 0.3s ease;
+}
+
+.about-box:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 15px 35px rgba(30, 60, 100, 0.10);
+}
+
+.about-icon {
+    width: 65px;
+
+    height: 65px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #edf5ff;
+
+    font-size: 27px;
+}
+
+.about-box h3 {
+    font-size: 20px;
+
+    margin-bottom: 10px;
+
+    color: #203555;
+}
+
+.about-box p {
+    color: #748197;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   SERVICES
+========================================= */
+
+.services-section {
+    background: #f5f8fc;
+}
+
+.services-grid {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+.service-card {
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 14px;
+
+    border: 1px solid #e5ebf3;
+
+    transition: 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 15px 35px rgba(30, 60, 100, 0.10);
+}
+
+.service-icon {
+    font-size: 30px;
+
+    margin-bottom: 17px;
+}
+
+.service-card h3 {
+    font-size: 18px;
+
+    color: #203555;
+
+    margin-bottom: 8px;
+}
+
+.service-card p {
+    color: #748197;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   SECURITY SECTION
+========================================= */
+
+.security-section {
+    padding: 75px 7%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #153d76,
+            #1769e0
+        );
+
+    color: white;
+}
+
+.security-content {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+.security-icon {
+    width: 85px;
+
+    height: 85px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.13);
+
+    font-size: 40px;
+}
+
+.security-label {
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    font-weight: 800;
+
+    opacity: 0.8;
+
+    margin-bottom: 7px;
+}
+
+.security-content h2 {
+    font-size: 32px;
+
+    margin-bottom: 10px;
+}
+
+.security-content p:last-child {
+    max-width: 700px;
+
+    font-size: 15px;
+
+    opacity: 0.82;
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact-section {
+    background: white;
+}
+
+.contact-box {
+    max-width: 950px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.contact-box div {
+    padding: 25px;
+
+    text-align: center;
+
+    border: 1px solid #e6ecf4;
+
+    border-radius: 13px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+.contact-box div:first-child {
+    font-size: 25px;
+}
+
+.contact-box div:nth-child(2) {
+    font-size: 25px;
+}
+
+.contact-box div:nth-child(3) {
+    font-size: 25px;
+}
+
+.contact-box strong {
+    font-size: 17px;
+
+    color: #243b5d;
+}
+
+.contact-box span {
+    color: #758197;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background: #101d32;
+
+    color: white;
+
+    padding: 45px 7%;
+}
+
+.footer-content {
+    max-width: 1100px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: 24px;
+
+    font-weight: 800;
+
+    margin-bottom: 8px;
+}
+
+.footer-content p {
+    color: #aebbd0;
+
+    font-size: 14px;
+
+    margin-bottom: 12px;
+}
+
+.footer-content span {
+    color: #728198;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .hero-content {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-card-container {
+        margin-top: 20px;
+    }
+
+    .about-content,
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 750px) {
+
+    .navbar {
+        height: auto;
+
+        padding: 18px 5%;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 13px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 65px 5%;
+    }
+
+    .hero-text h1 {
+        font-size: 43px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .bank-card {
+        width: 330px;
+
+        height: 205px;
+
+        padding: 23px;
+    }
+
+    .card-number {
+        margin-top: 38px;
+
+        font-size: 17px;
+    }
+
+    .balance-card {
+        right: 0;
+
+        width: 210px;
+
+        padding: 18px;
+    }
+
+    .about-section,
+    .services-section,
+    .contact-section {
+        padding: 75px 5%;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .about-content,
+    .services-grid,
+    .contact-box {
+        grid-template-columns: 1fr;
+    }
+
+    .security-content {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .security-content h2 {
+        font-size: 27px;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .bank-card {
+        width: 290px;
+
+        height: 180px;
+
+        padding: 19px;
+    }
+
+    .card-number {
+        margin-top: 32px;
+
+        font-size: 14px;
+
+        letter-spacing: 2px;
+    }
+
+    .card-bottom {
+        margin-top: 20px;
+    }
+
+    .balance-card {
+        width: 185px;
+    }
+}
+/* =========================================
+   LOGIN PAGE
+========================================= */
+
+.auth-page {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(23, 105, 224, 0.12),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 80% 80%,
+            rgba(23, 105, 224, 0.10),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #f5f9ff,
+            #eaf2fc
+        );
+
+    padding: 40px 20px;
+}
+
+
+/* =========================================
+   LOGIN CONTAINER
+========================================= */
+
+.login-container {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+/* =========================================
+   LOGIN CARD
+========================================= */
+
+.login-card {
+    width: 100%;
+
+    max-width: 460px;
+
+    padding: 45px 42px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2eaf4;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 25px 60px rgba(25, 55, 95, 0.14);
+
+    text-align: center;
+}
+
+
+/* =========================================
+   LOGIN LOGO
+========================================= */
+
+.login-logo {
+    width: 70px;
+
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 18px;
+
+    background: #edf5ff;
+
+    font-size: 34px;
+
+    box-shadow:
+        0 8px 20px rgba(23, 105, 224, 0.10);
+}
+
+
+.login-card h1 {
+    color: #172b4d;
+
+    font-size: 32px;
+
+    margin-bottom: 7px;
+}
+
+
+.login-subtitle {
+    color: #78869a;
+
+    font-size: 14px;
+
+    margin-bottom: 32px;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+#loginForm {
+    text-align: left;
+}
+
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #273b59;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+.form-group input {
+    width: 100%;
+
+    height: 52px;
+
+    padding: 0 15px;
+
+    border: 1px solid #d6e0ec;
+
+    border-radius: 9px;
+
+    background: #f9fbfd;
+
+    color: #1d2f4b;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s ease;
+}
+
+
+.form-group input::placeholder {
+    color: #9aa7b8;
+}
+
+
+.form-group input:focus {
+    border-color: #1769e0;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0 0 3px rgba(23, 105, 224, 0.10);
+}
+
+
+/* =========================================
+   PASSWORD
+========================================= */
+
+.password-wrapper {
+    position: relative;
+}
+
+
+.password-wrapper input {
+    padding-right: 52px;
+}
+
+
+.password-toggle {
+    position: absolute;
+
+    top: 50%;
+
+    right: 12px;
+
+    transform: translateY(-50%);
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+    opacity: 0.65;
+
+    padding: 5px;
+}
+
+
+.password-toggle:hover {
+    opacity: 1;
+}
+
+
+/* =========================================
+   LOGIN OPTIONS
+========================================= */
+
+.login-options {
+    display: flex;
+
+    justify-content: flex-end;
+
+    margin-top: -8px;
+
+    margin-bottom: 22px;
+}
+
+
+.login-options a {
+    color: #1769e0;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.login-options a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   LOGIN BUTTON
+========================================= */
+
+.login-submit {
+    width: 100%;
+
+    height: 53px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #1769e0;
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 10px 22px rgba(23, 105, 224, 0.22);
+
+    transition: 0.3s ease;
+}
+
+
+.login-submit:hover {
+    background: #0f56bd;
+
+    transform: translateY(-2px);
+}
+
+
+.login-submit:active {
+    transform: scale(0.98);
+}
+
+
+/* =========================================
+   REGISTER LINK
+========================================= */
+
+.register-link {
+    margin-top: 27px;
+
+    font-size: 14px;
+
+    color: #78869a;
+}
+
+
+.register-link a {
+    margin-left: 5px;
+
+    color: #1769e0;
+
+    font-weight: 700;
+}
+
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   BACK HOME
+========================================= */
+
+.back-home {
+    display: inline-block;
+
+    margin-top: 24px;
+
+    color: #65748a;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+
+.back-home:hover {
+    color: #1769e0;
+
+    transform: translateX(-3px);
+}
+
+
+/* =========================================
+   LOGIN RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 520px) {
+
+    .auth-page {
+        padding: 25px 15px;
+    }
+
+    .login-card {
+        padding: 35px 25px;
+
+        border-radius: 16px;
+    }
+
+    .login-card h1 {
+        font-size: 28px;
+    }
+
+    .login-subtitle {
+        margin-bottom: 27px;
+    }
+}
+/* =========================================
+   CUSTOMER DASHBOARD
+========================================= */
+
+.dashboard-page {
+    min-height: 100vh;
+    background: #f4f7fc;
+}
+
+
+/* Dashboard Main */
+
+.dashboard-main {
+    padding: 60px 7%;
+}
+
+
+/* Welcome Section */
+
+.dashboard-welcome {
+    margin-bottom: 45px;
+}
+
+.dashboard-label {
+    color: #1769e0;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.dashboard-welcome h1 {
+    color: #172b4d;
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.dashboard-welcome p {
+    color: #64748b;
+    font-size: 17px;
+}
+
+
+/* Account Overview */
+
+.account-overview {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 70px;
+}
+
+
+/* Account Cards */
+
+.account-card {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(15, 35, 70, 0.08);
+    transition: 0.3s ease;
+}
+
+.account-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(15, 35, 70, 0.12);
+}
+
+
+.account-icon {
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+
+.account-card p {
+    color: #64748b;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+
+.account-card h2 {
+    color: #172b4d;
+    font-size: 28px;
+    margin: 0;
+}
+
+
+/* Balance Card */
+
+.balance-card {
+    background: linear-gradient(
+        135deg,
+        #1769e0,
+        #0d47a1
+    );
+}
+
+.balance-card p,
+.balance-card h2 {
+    color: white;
+}
+
+
+/* Status */
+
+.status-active {
+    color: #16a34a;
+}
+
+
+/* Banking Services */
+
+.dashboard-services {
+    margin-top: 20px;
+}
+
+.dashboard-services-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.dashboard-services-title span {
+    color: #1769e0;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.dashboard-services-title h2 {
+    color: #172b4d;
+    font-size: 38px;
+    margin-top: 10px;
+}
+
+
+/* Service Grid */
+
+.dashboard-service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+/* Service Card */
+
+.dashboard-service-card {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(15, 35, 70, 0.07);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.dashboard-service-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(15, 35, 70, 0.12);
+}
+
+.dashboard-service-card .service-icon {
+    font-size: 38px;
+    margin-bottom: 18px;
+}
+
+.dashboard-service-card h3 {
+    color: #172b4d;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.dashboard-service-card p {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* Dashboard Footer */
+
+.dashboard-footer {
+    margin-top: 80px;
+    padding: 25px;
+    text-align: center;
+    background: white;
+    color: #64748b;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+
+    .account-overview {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dashboard-welcome h1 {
+        font-size: 34px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .dashboard-main {
+        padding: 40px 5%;
+    }
+
+    .dashboard-service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-welcome h1 {
+        font-size: 29px;
+    }
+
+    .dashboard-services-title h2 {
+        font-size: 30px;
+    }
+
+}
+/* =========================================
+   DEPOSIT MONEY PAGE
+========================================= */
+
+.deposit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.deposit-card {
+    width: 100%;
+    max-width: 520px;
+    background: white;
+    padding: 45px;
+    border-radius: 22px;
+    box-shadow: 0 12px 35px rgba(15, 35, 70, 0.10);
+    text-align: center;
+}
+
+
+.deposit-icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #eaf2ff;
+    border-radius: 50%;
+
+    font-size: 38px;
+}
+
+
+.deposit-card h2 {
+    color: #172b4d;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+
+.deposit-description {
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+/* Account Number */
+
+.deposit-account {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 16px 18px;
+    margin-bottom: 25px;
+
+    background: #f4f7fc;
+    border-radius: 12px;
+}
+
+
+.deposit-account span {
+    color: #64748b;
+    font-size: 14px;
+}
+
+
+.deposit-account strong {
+    color: #172b4d;
+    font-size: 16px;
+}
+
+
+/* Form */
+
+.deposit-card .form-group {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+
+.deposit-card label {
+    display: block;
+    color: #172b4d;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+/* Amount Input */
+
+.amount-input {
+    display: flex;
+    align-items: center;
+
+    border: 1px solid #dbe3ef;
+    border-radius: 12px;
+
+    background: white;
+
+    transition: 0.3s ease;
+}
+
+
+.amount-input:focus-within {
+    border-color: #1769e0;
+    box-shadow: 0 0 0 3px rgba(23, 105, 224, 0.10);
+}
+
+
+.amount-input span {
+    padding-left: 18px;
+
+    color: #1769e0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.amount-input input {
+    width: 100%;
+
+    padding: 16px 18px;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: #172b4d;
+    font-size: 17px;
+}
+
+
+/* Remove number input arrows */
+
+.amount-input input::-webkit-outer-spin-button,
+.amount-input input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Deposit Button */
+
+.deposit-btn {
+    width: 100%;
+
+    padding: 16px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #1769e0;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+.deposit-btn:hover {
+    background: #0d47a1;
+    transform: translateY(-2px);
+}
+
+
+.deposit-btn:active {
+    transform: scale(0.98);
+}
+
+
+/* Deposit Message */
+
+.deposit-message {
+    margin-top: 20px;
+
+    color: #16a34a;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* Back to Dashboard */
+
+.dashboard-back {
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .deposit-card {
+        padding: 30px 22px;
+    }
+
+    .deposit-card h2 {
+        font-size: 26px;
+    }
+
+    .deposit-account {
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+    }
+
+}
+/* =========================================
+   TRANSFER MESSAGE
+========================================= */
+
+#transferMessage {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+#receiverName {
+    margin-top: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 600;
+}

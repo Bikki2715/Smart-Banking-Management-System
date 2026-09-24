@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Customer Profile | SmartBank</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body class="dashboard-page">
+
+
+    <!-- =========================================
+         NAVIGATION BAR
+    ========================================== -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🏦 SmartBank
+        </div>
+
+        <div class="nav-links">
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="#" id="logoutBtn">
+                Logout
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================================
+         PROFILE MAIN
+    ========================================== -->
+
+    <main class="dashboard-main">
+
+
+        <!-- =====================================
+             PROFILE HEADER
+        ====================================== -->
+
+        <section class="dashboard-welcome">
+
+            <div class="dashboard-label">
+                CUSTOMER PROFILE
+            </div>
+
+            <h1>
+                My Profile 👤
+            </h1>
+
+            <p>
+                View your SmartBank account information.
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================
+             PROFILE CARD
+        ====================================== -->
+
+        <section class="account-overview">
+
+
+            <!-- NAME -->
+
+            <div class="account-card">
+
+                <div class="account-icon">
+                    👤
+                </div>
+
+                <p>
+                    Customer Name
+                </p>
+
+                <h2 id="profileName">
+                    ----------
+                </h2>
+
+            </div>
+
+
+
+            <!-- ACCOUNT NUMBER -->
+
+            <div class="account-card">
+
+                <div class="account-icon">
+                    🏦
+                </div>
+
+                <p>
+                    Account Number
+                </p>
+
+                <h2 id="profileAccountNumber">
+                    ----------
+                </h2>
+
+            </div>
+
+
+
+            <!-- ACCOUNT STATUS -->
+
+            <div class="account-card">
+
+                <div class="account-icon">
+                    🟢
+                </div>
+
+                <p>
+                    Account Status
+                </p>
+
+                <h2 id="profileStatus">
+                    ----------
+                </h2>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================
+             PROFILE DETAILS
+        ====================================== -->
+
+        <section class="dashboard-services">
+
+
+            <div class="dashboard-services-title">
+
+                <span>
+                    ACCOUNT INFORMATION
+                </span>
+
+                <h2>
+                    Your Details
+                </h2>
+
+            </div>
+
+
+
+            <div class="dashboard-service-grid">
+
+
+                <!-- EMAIL -->
+
+                <div class="dashboard-service-card">
+
+                    <div class="service-icon">
+                        📧
+                    </div>
+
+                    <h3>
+                        Email
+                    </h3>
+
+                    <p id="profileEmail">
+                        ----------
+                    </p>
+
+                </div>
+
+
+
+                <!-- MOBILE -->
+
+                <div class="dashboard-service-card">
+
+                    <div class="service-icon">
+                        📱
+                    </div>
+
+                    <h3>
+                        Mobile Number
+                    </h3>
+
+                    <p id="profileMobile">
+                        ----------
+                    </p>
+
+                </div>
+
+
+
+                <!-- ACCOUNT CREATED -->
+
+                <div class="dashboard-service-card">
+
+                    <div class="service-icon">
+                        📅
+                    </div>
+
+                    <h3>
+                        Account Created
+                    </h3>
+
+                    <p id="profileCreatedAt">
+                        ----------
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================
+             BACK BUTTON
+        ====================================== -->
+
+        <div style="text-align: center; margin-top: 30px;">
+
+            <a
+                href="dashboard.html"
+                class="dashboard-btn"
+            >
+                Back to Dashboard
+            </a>
+
+        </div>
+
+
+    </main>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="dashboard-footer">
+
+        <p>
+            © 2026 SmartBank. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

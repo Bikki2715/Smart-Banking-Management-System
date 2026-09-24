@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Customer Dashboard | SmartBank</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body class="dashboard-page">
+
+
+    <!-- =========================================
+         NAVIGATION BAR
+    ========================================== -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🏦 SmartBank
+        </div>
+
+        <div class="nav-links">
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="index.html">
+                Home
+            </a>
+            <a href="profile.html">
+                Profile
+            </a>
+            <a href="account-status.html">
+                Account Status
+            </a>
+
+            <a href="#" id="logoutBtn">
+                Logout
+            </a>
+          
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================================
+         DASHBOARD MAIN
+    ========================================== -->
+
+    <main class="dashboard-main">
+
+
+        <!-- =====================================
+             WELCOME SECTION
+        ====================================== -->
+
+        <section class="dashboard-welcome">
+
+            <div class="dashboard-label">
+                CUSTOMER DASHBOARD
+            </div>
+
+            <h1>
+                Welcome,
+                <span id="customerName">
+                    Customer
+                </span>
+                👋
+            </h1>
+
+            <p>
+                Manage your SmartBank account easily and securely.
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================
+             ACCOUNT OVERVIEW
+        ====================================== -->
+
+        <section class="account-overview">
+
+
+            <!-- ACCOUNT NUMBER -->
+
+            <div class="account-card">
+
+                <div class="account-icon">
+                    🏦
+                </div>
+
+                <p>
+                    Account Number
+                </p>
+
+                <h2 id="accountNumber">
+                    ----------
+                </h2>
+
+            </div>
+
+
+
+            <!-- AVAILABLE BALANCE -->
+
+            <div class="account-card balance-card">
+
+                <div class="account-icon">
+                    💰
+                </div>
+
+                <p>
+                    Available Balance
+                </p>
+
+                <h2 id="accountBalance">
+                    ₹0.00
+                </h2>
+
+            </div>
+
+
+
+            <!-- ACCOUNT STATUS -->
+
+            <div class="account-card">
+
+                <div class="account-icon">
+                    🟢
+                </div>
+
+                <p>
+                    Account Status
+                </p>
+
+                <h2
+                    id="accountStatus"
+                    class="status-active"
+                >
+                    Active
+                </h2>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================
+             BANKING SERVICES
+        ====================================== -->
+
+        <section class="dashboard-services">
+
+
+            <!-- SERVICES TITLE -->
+
+            <div class="dashboard-services-title">
+
+                <span>
+                    BANKING SERVICES
+                </span>
+
+                <h2>
+                    What would you like to do?
+                </h2>
+
+            </div>
+
+
+
+            <!-- SERVICES GRID -->
+
+            <div class="dashboard-service-grid">
+
+
+                <!-- =================================
+                     CHECK BALANCE
+                ================================== -->
+
+                <div
+                    class="dashboard-service-card"
+                    id="checkBalanceCard"
+                >
+
+                    <div class="service-icon">
+                        💰
+                    </div>
+
+                    <h3>
+                        Check Balance
+                    </h3>
+
+                    <p>
+                        View your current account balance.
+                    </p>
+
+                    <button
+                        class="dashboard-btn"
+                        type="button"
+                    >
+                        Check Balance
+                    </button>
+
+                </div>
+
+
+
+                <!-- =================================
+                     DEPOSIT MONEY
+                ================================== -->
+
+                <div
+                    class="dashboard-service-card"
+                    id="depositCard"
+                >
+
+                    <div class="service-icon">
+                        💵
+                    </div>
+
+                    <h3>
+                        Deposit Money
+                    </h3>
+
+                    <p>
+                        Add money to your SmartBank account.
+                    </p>
+
+                    <button
+                        class="dashboard-btn"
+                        type="button"
+                    >
+                        Deposit Money
+                    </button>
+
+                </div>
+
+
+
+                <!-- =================================
+                     WITHDRAW MONEY
+                ================================== -->
+
+                <div
+                    class="dashboard-service-card"
+                    id="withdrawCard"
+                >
+
+                    <div class="service-icon">
+                        🏧
+                    </div>
+
+                    <h3>
+                        Withdraw Money
+                    </h3>
+
+                    <p>
+                        Withdraw money from your account.
+                    </p>
+
+                    <button
+                        class="dashboard-btn"
+                        type="button"
+                    >
+                        Withdraw Money
+                    </button>
+
+                </div>
+
+
+
+                <!-- =================================
+                     TRANSFER MONEY
+                ================================== -->
+
+                <div
+                    class="dashboard-service-card"
+                    id="transferCard"
+                >
+
+                    <div class="service-icon">
+                        🔄
+                    </div>
+
+                    <h3>
+                        Transfer Money
+                    </h3>
+
+                    <p>
+                        Send money securely to another account.
+                    </p>
+
+                    <button
+                        class="dashboard-btn"
+                        type="button"
+                    >
+                        Transfer Money
+                    </button>
+
+                </div>
+
+
+
+                <!-- =================================
+                     TRANSACTIONS
+                ================================== -->
+
+                <div
+                    class="dashboard-service-card"
+                    id="transactionsCard"
+                >
+
+                    <div class="service-icon">
+                        📊
+                    </div>
+
+                    <h3>
+                        Transactions
+                    </h3>
+
+                    <p>
+                        View your transaction history.
+                    </p>
+
+                    <button
+                        class="dashboard-btn"
+                        type="button"
+                    >
+                        Transactions
+                    </button>
+
+                </div>
+
+
+
+                <!-- =================================
+                     NOTIFICATIONS
+                ================================== -->
+
+                <div
+                    class="dashboard-service-card"
+                    id="notificationsCard"
+                >
+
+                    <div class="service-icon">
+                        🔔
+                    </div>
+
+                    <h3>
+                        Notifications
+                    </h3>
+
+                    <p>
+                        Check your latest banking notifications.
+                    </p>
+
+                    <button
+                        class="dashboard-btn"
+                        type="button"
+                    >
+                        Notifications
+                    </button>
+
+                </div>
+                <!-- =================================
+                     CUSTOMER PROFILE
+                ================================== -->
+                <div
+                    class="dashboard-service-card"
+                    id="profileCard"
+                >
+
+                    <div class="service-icon">
+                        👤
+                    </div>
+
+                    <h3>
+                        Customer Profile
+                    </h3>
+
+                    <p>
+                        View  your personal account information.
+                    </p>
+
+                    <button
+                        class="dashboard-btn"
+                        type="button"
+                    >
+                        Customer Profile
+                    </button>
+
+
+            </div>
+                <!-- =================================
+                        ACCOUNT STATUS
+                ================================== -->
+
+                    <div
+                        class="dashboard-service-card"
+                        id="accountStatusCard"
+                    >
+
+                    <div class="service-icon">
+                        🏦
+                    </div>
+
+                    <h3>
+                        Account Status
+                        </h3>
+
+                    <p>
+                        Check your current account status.
+                        </p>
+
+                    <button
+                    class="dashboard-btn"
+                    type="button"
+                    >
+                        Account Status
+                    </button>
+
+            </div>
+            <!-- CHANGE PASSWORD -->
+
+            <div
+                class="dashboard-service-card"
+                id="changePasswordCard"
+            >
+
+                <div class="service-icon">
+                    🔐
+                </div>
+
+                <h3>
+                    Change Password
+                </h3>
+
+                <p>
+                    Update your account password securely.
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="dashboard-footer">
+
+        <p>
+            © 2026 SmartBank. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

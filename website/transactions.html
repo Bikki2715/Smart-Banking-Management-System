@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Transactions | SmartBank</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body class="dashboard-page">
+
+
+    <!-- ================================
+         NAVBAR
+    ================================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🏦 SmartBank
+        </div>
+
+        <div class="nav-links">
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="login.html"
+               id="transactionLogout">
+                Logout
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- ================================
+         TRANSACTION HISTORY
+    ================================= -->
+
+    <main class="dashboard-main">
+
+        <section class="dashboard-welcome">
+
+            <p class="dashboard-label">
+                SMARTBANK
+            </p>
+
+            <h1>
+                Transaction History
+            </h1>
+
+            <p>
+                View your recent banking transactions.
+            </p>
+
+        </section>
+
+
+
+        <!-- ACCOUNT INFORMATION -->
+
+        <section class="account-overview">
+
+            <div class="account-card">
+
+                <div class="account-icon">
+                    👤
+                </div>
+
+                <p>
+                    Account Number
+                </p>
+
+                <h2 id="transactionAccountNumber">
+                    Loading...
+                </h2>
+
+            </div>
+
+
+            <div class="account-card balance-card">
+
+                <div class="account-icon">
+                    💰
+                </div>
+
+                <p>
+                    Current Balance
+                </p>
+
+                <h2 id="transactionBalance">
+                    Loading...
+                </h2>
+
+            </div>
+
+
+            <div class="account-card">
+
+                <div class="account-icon">
+                    📊
+                </div>
+
+                <p>
+                    Total Transactions
+                </p>
+
+                <h2 id="transactionCount">
+                    0
+                </h2>
+
+            </div>
+
+        </section>
+        <!-- TRANSACTION FILTER -->
+
+        <section class="dashboard-services">
+
+            <div class="dashboard-services-title">
+
+                <span>
+                    TRANSACTION FILTER
+                </span>
+
+                <h2>
+                    Filter Transactions By Date
+                </h2>
+
+            </div>
+
+
+            <div class="dashboard-form">
+
+                <label for="transactionFilterDate">
+                    Select Date
+                </label>
+
+                <input
+                    type="date"
+                    id="transactionFilterDate"
+                >
+
+                <button
+                    type="button"
+                    class="primary-btn"
+                    id="filterTransactionDateBtn"
+               >
+                    Filter Transactions
+                </button>
+
+                <button
+                    type="button"
+                    class="primary-btn"
+                    id="clearTransactionFilterBtn"
+                >
+                    Clear Filter
+                </button>
+
+            </div>
+
+
+             <p id="transactionFilterMessage"></p>
+
+        </section>
+        <!-- DATE RANGE FILTER -->
+
+        <section class="dashboard-services">
+
+            <div class="dashboard-services-title">
+
+                <span>
+                    TRANSACTION FILTER
+                </span>
+
+                <h2>
+                    Filter Transactions By Date Range
+                </h2>
+
+            </div>
+
+
+            <div class="dashboard-form">
+
+                <label for="transactionStartDate">
+                    Start Date
+                </label>
+
+                <input
+                    type="date"
+                    id="transactionStartDate"
+                >
+
+
+                <label for="transactionEndDate">
+                    End Date
+                </label>
+
+                <input
+                    type="date"
+                    id="transactionEndDate"
+                >
+
+
+                <button
+                    type="button"
+                    class="primary-btn"
+                    id="filterTransactionRangeBtn"
+                >
+                    Filter Date Range
+                </button>
+
+
+                <button
+                    type="button"
+                    class="primary-btn"
+                    id="clearTransactionRangeBtn"
+                >
+                    Clear Range
+                </button>
+
+            </div>
+
+
+            <p id="transactionRangeMessage"></p>
+
+        </section>
+
+        <!-- DATE + TRANSACTION TYPE FILTER -->
+
+        <section class="dashboard-services">
+
+            <div class="dashboard-services-title">
+
+                <span>
+                    ADVANCED FILTER
+                </span>
+
+                <h2>
+                    Filter By Type And Date
+                </h2>
+
+            </div>
+
+
+            <div class="dashboard-form">
+
+                <label for="transactionTypeDateFilter">
+                    Transaction Type
+                </label>
+
+
+                <select
+                    id="transactionTypeDateFilter"
+                >
+
+                <option value="">
+                    Select Transaction Type
+                </option>
+
+                <option value="Deposit">
+                    Deposit
+                </option>
+
+                <option value="Withdrawal">
+                    Withdrawal
+                </option>
+
+                <option value="Transfer Sent">
+                    Transfer Sent
+                </option>
+
+                <option value="Transfer Received">
+                    Transfer Received
+                </option>
+
+                <option value="Initial Deposit">
+                    Initial Deposit
+                </option>
+
+                </select>
+
+
+                    <label for="transactionTypeDate">
+                        Transaction Date
+                    </label>
+
+
+                    <input
+                        type="date"
+                        id="transactionTypeDate"
+                    >
+
+
+                    <button
+                        type="button"
+                        class="primary-btn"
+                        id="filterTransactionTypeDateBtn"
+                    >
+                        Filter Transactions
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="primary-btn"
+                        id="clearTransactionTypeDateBtn"
+                    >
+                        Clear Filter
+                    </button>
+
+                </div>
+
+
+                <p id="transactionTypeDateMessage"></p>
+
+            </section>
+
+
+        <!-- TRANSACTION TYPE FILTER -->
+
+<section class="dashboard-services">
+
+    <div class="dashboard-services-title">
+
+        <span>
+            TRANSACTION FILTER
+        </span>
+
+        <h2>
+            Filter Transactions By Type
+        </h2>
+
+    </div>
+
+
+    <div class="dashboard-form">
+
+        <label for="transactionTypeFilter">
+            Transaction Type
+        </label>
+
+        <select id="transactionTypeFilter">
+
+            <option value="">
+                Select Transaction Type
+            </option>
+
+            <option value="Deposit">
+                Deposit
+            </option>
+
+            <option value="Withdrawal">
+                Withdrawal
+            </option>
+
+            <option value="Transfer Sent">
+                Transfer Sent
+            </option>
+
+            <option value="Transfer Received">
+                Transfer Received
+            </option>
+
+            <option value="Initial Deposit">
+                Initial Deposit
+            </option>
+
+        </select>
+
+
+        <button
+            type="button"
+            class="primary-btn"
+            id="filterTransactionTypeBtn"
+        >
+            Filter By Type
+        </button>
+
+
+        <button
+            type="button"
+            class="primary-btn"
+            id="clearTransactionTypeBtn"
+        >
+            Clear Type
+        </button>
+
+    </div>
+
+
+    <p id="transactionTypeMessage"></p>
+
+</section>
+
+<!-- TRANSACTION SORTING -->
+
+<section class="dashboard-services">
+
+    <div class="dashboard-services-title">
+
+        <span>
+            TRANSACTION SORTING
+        </span>
+
+        <h2>
+            Sort Transactions
+        </h2>
+
+    </div>
+
+
+    <div class="dashboard-form">
+
+        <label for="transactionSort">
+
+            Sort By
+
+        </label>
+
+
+        <select id="transactionSort">
+
+            <option value="">
+
+                Select Sorting Option
+
+            </option>
+
+            <option value="newest">
+
+                Newest → Oldest
+
+            </option>
+
+            <option value="oldest">
+
+                Oldest → Newest
+
+            </option>
+
+            <option value="amount-high">
+
+                Amount: High → Low
+
+            </option>
+
+            <option value="amount-low">
+
+                Amount: Low → High
+
+            </option>
+
+        </select>
+
+
+        <button
+            type="button"
+            class="primary-btn"
+            id="sortTransactionsBtn"
+        >
+
+            Sort Transactions
+
+        </button>
+
+
+        <button
+            type="button"
+            class="primary-btn"
+            id="clearTransactionSortBtn"
+        >
+
+            Clear Sort
+
+        </button>
+
+    </div>
+
+
+    <p id="transactionSortMessage"></p>
+
+</section>
+
+
+<!-- TRANSACTION SUMMARY -->
+
+<section class="dashboard-services">
+
+    <div class="dashboard-services-title">
+
+        <span>
+            TRANSACTION SUMMARY
+        </span>
+
+        <h2>
+            Account Transaction Summary
+        </h2>
+
+    </div>
+
+    <div class="dashboard-form">
+
+        <button
+            type="button"
+            class="primary-btn"
+            id="loadTransactionSummaryBtn"
+        >
+            View Transaction Summary
+        </button>
+
+    </div>
+
+    <div id="transactionSummary">
+
+        <p>Total Transactions: <strong id="summaryTotalTransactions">0</strong></p>
+
+        <p>Total Credits: ₹<strong id="summaryTotalCredits">0.00</strong></p>
+
+        <p>Total Debits: ₹<strong id="summaryTotalDebits">0.00</strong></p>
+
+    </div>
+
+    <p id="transactionSummaryMessage"></p>
+
+</section>
+
+<!-- TRANSACTION SEARCH -->
+
+<section class="dashboard-services">
+
+    <div class="dashboard-services-title">
+
+        <span>
+            TRANSACTION SEARCH
+        </span>
+
+        <h2>
+            Search Transaction
+        </h2>
+
+    </div>
+
+    <div class="dashboard-form">
+
+        <label for="transactionSearchInput">
+            Transaction ID
+        </label>
+
+        <input
+            type="text"
+            id="transactionSearchInput"
+            placeholder="Enter transaction ID"
+        >
+
+        <button
+            type="button"
+            class="primary-btn"
+            id="searchTransactionBtn"
+        >
+            Search Transaction
+        </button>
+
+        <button
+            type="button"
+            class="primary-btn"
+            id="clearTransactionSearchBtn"
+        >
+            Clear Search
+        </button>
+
+    </div>
+
+    <p id="transactionSearchMessage"></p>
+
+    <div id="transactionSearchResults"></div>
+
+</section>
+<!-- EXPORT ACCOUNT STATEMENT -->
+
+<section class="dashboard-services">
+
+    <div class="dashboard-services-title">
+
+        <span>
+            ACCOUNT STATEMENT
+        </span>
+
+        <h2>
+            Export Account Statement
+        </h2>
+
+    </div>
+
+    <div class="dashboard-form">
+
+        <button
+            type="button"
+            class="primary-btn"
+            id="exportAccountStatementBtn"
+        >
+            Export Account Statement
+        </button>
+
+    </div>
+
+    <p id="exportStatementMessage"></p>
+
+</section>
+
+
+
+        <!-- TRANSACTION LIST -->
+
+        <section class="dashboard-services">
+
+            <div class="dashboard-services-title">
+
+                <span>
+                    ACCOUNT ACTIVITY
+                </span>
+
+                <h2>
+                    Your Transactions
+                </h2>
+
+            </div>
+
+
+            <div
+                id="transactionList"
+                class="transaction-list"
+            >
+
+                <p>
+                    Loading transactions...
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- BACK BUTTON -->
+
+        <div class="dashboard-back">
+
+            <a href="dashboard.html">
+                ← Back to Dashboard
+            </a>
+
+        </div>
+
+    </main>
+
+    <!-- TRANSACTION SUMMARY -->
+<section class="dashboard-services">
+
+    <div class="dashboard-services-title">
+        <span>TRANSACTION SUMMARY</span>
+        <h2>Account Transaction Summary</h2>
+    </div>
+
+    <div class="dashboard-form">
+
+        <button
+            type="button"
+            class="primary-btn"
+            id="loadTransactionSummaryBtn"
+        >
+            View Transaction Summary
+        </button>
+
+    </div>
+
+    <div id="transactionSummaryResults"></div>
+
+    <p id="transactionSummaryMessage"></p>
+
+</section>
+
+
+
+    <!-- ================================
+         FOOTER
+    ================================= -->
+
+    <footer class="dashboard-footer">
+
+        <p>
+            © 2026 SmartBank. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

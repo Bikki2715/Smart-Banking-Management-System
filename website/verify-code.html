@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Verify Code | SmartBank</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <main class="auth-page">
+
+        <div class="login-container">
+
+            <div class="login-card">
+
+
+                <!-- LOGO -->
+
+                <div class="login-logo">
+                    🔐
+                </div>
+
+
+                <!-- TITLE -->
+
+                <h1>Verify Your Email</h1>
+
+                <p class="login-subtitle">
+                    Enter the verification code sent to your registered email address.
+                </p>
+
+
+                <!-- VERIFICATION FORM -->
+
+                <form id="verificationForm">
+
+
+                    <div class="form-group">
+
+                        <label for="verificationCode">
+                            Verification Code
+                        </label>
+
+                        <input
+                            type="text"
+                            id="verificationCode"
+                            name="verificationCode"
+                            placeholder="Enter 6-digit code"
+                            maxlength="6"
+                            inputmode="numeric"
+                            autocomplete="one-time-code"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- VERIFY BUTTON -->
+
+                    <button
+                        type="submit"
+                        class="login-submit"
+                    >
+                        Verify Code
+                    </button>
+
+
+                </form>
+
+
+                <!-- RESEND -->
+
+                <div class="register-link">
+
+                    Didn't receive the code?
+
+                    <a href="#" id="resendCode">
+                        Resend Code
+                    </a>
+
+                </div>
+
+
+                <!-- BACK -->
+
+                <div class="back-home">
+
+                    <a href="forgot-password.html">
+                        ← Back
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Banking Summary - SmartBank Admin</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- =========================================
+         NAVIGATION BAR
+         ========================================= -->
+
+    <nav class="navbar">
+
+        <div class="nav-logo">
+            SmartBank Admin
+        </div>
+
+        <div class="nav-links">
+
+            <a href="admin-dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="admin-account-status.html">
+                Account Status
+            </a>
+
+            <a href="admin-customer-search.html">
+                Customer Search
+            </a>
+
+            <a href="admin-customer-details.html">
+                Customer Details
+            </a>
+
+            <a href="admin-transaction-search.html">
+                Transaction Search
+            </a>
+
+            <a href="admin-transaction-filter.html">
+                Transaction Filter
+            </a>
+
+            <a href="admin-activity-log.html">
+                Activity Log
+            </a>
+
+            <a href="admin-system-health.html">
+                System Health
+            </a>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a
+                href="#"
+                id="adminLogoutBtn"
+            >
+                Logout
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================================
+         MAIN CONTENT
+         ========================================= -->
+
+    <main>
+
+        <section class="dashboard-section">
+
+            <div class="dashboard-container">
+
+                <h1>
+                    Banking Summary
+                </h1>
+
+                <p>
+                    View overall banking transaction and balance statistics.
+                </p>
+
+
+                <!-- =========================================
+                     SUMMARY CARDS
+                     ========================================= -->
+
+                <div class="dashboard-grid">
+
+
+                    <!-- Total Deposit Transactions -->
+
+                    <div class="dashboard-service-card">
+
+                        <div class="service-icon">
+                            💰
+                        </div>
+
+                        <h3>
+                            Deposit Transactions
+                        </h3>
+
+                        <p id="summaryDepositTransactions">
+                            Loading...
+                        </p>
+
+                    </div>
+
+
+                    <!-- Total Deposit Amount -->
+
+                    <div class="dashboard-service-card">
+
+                        <div class="service-icon">
+                            💵
+                        </div>
+
+                        <h3>
+                            Total Deposits
+                        </h3>
+
+                        <p id="summaryDepositAmount">
+                            Loading...
+                        </p>
+
+                    </div>
+
+
+                    <!-- Total Withdrawal Transactions -->
+
+                    <div class="dashboard-service-card">
+
+                        <div class="service-icon">
+                            🏧
+                        </div>
+
+                        <h3>
+                            Withdrawal Transactions
+                        </h3>
+
+                        <p id="summaryWithdrawalTransactions">
+                            Loading...
+                        </p>
+
+                    </div>
+
+
+                    <!-- Total Withdrawal Amount -->
+
+                    <div class="dashboard-service-card">
+
+                        <div class="service-icon">
+                            💸
+                        </div>
+
+                        <h3>
+                            Total Withdrawals
+                        </h3>
+
+                        <p id="summaryWithdrawalAmount">
+                            Loading...
+                        </p>
+
+                    </div>
+
+
+                    <!-- Total Transfer Transactions -->
+
+                    <div class="dashboard-service-card">
+
+                        <div class="service-icon">
+                            🔄
+                        </div>
+
+                        <h3>
+                            Transfer Transactions
+                        </h3>
+
+                        <p id="summaryTransferTransactions">
+                            Loading...
+                        </p>
+
+                    </div>
+
+
+                    <!-- Total Transfer Amount -->
+
+                    <div class="dashboard-service-card">
+
+                        <div class="service-icon">
+                            💳
+                        </div>
+
+                        <h3>
+                            Total Transfers
+                        </h3>
+
+                        <p id="summaryTransferAmount">
+                            Loading...
+                        </p>
+
+                    </div>
+
+
+                    <!-- Successful Transactions -->
+
+                    <div class="dashboard-service-card">
+
+                        <div class="service-icon">
+                            ✅
+                        </div>
+
+                        <h3>
+                            Successful Transactions
+                        </h3>
+
+                        <p id="summarySuccessfulTransactions">
+                            Loading...
+                        </p>
+
+                    </div>
+
+
+                    <!-- Failed Transactions -->
+
+                    <div class="dashboard-service-card">
+
+                        <div class="service-icon">
+                            ❌
+                        </div>
+
+                        <h3>
+                            Failed Transactions
+                        </h3>
+
+                        <p id="summaryFailedTransactions">
+                            Loading...
+                        </p>
+
+                    </div>
+
+
+                    <!-- Active Balance -->
+
+                    <div class="dashboard-service-card">
+
+                        <div class="service-icon">
+                            🏦
+                        </div>
+
+                        <h3>
+                            Active Customer Balance
+                        </h3>
+
+                        <p id="summaryActiveBalance">
+                            Loading...
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- =========================================
+                     STATUS MESSAGE
+                     ========================================= -->
+
+                <p
+                    id="bankingSummaryMessage"
+                ></p>
+
+
+                <!-- =========================================
+                     BACK TO DASHBOARD
+                     ========================================= -->
+
+                <div class="dashboard-actions">
+
+                    <a
+                        href="admin-dashboard.html"
+                        class="primary-btn"
+                    >
+                        Back to Admin Dashboard
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         FOOTER
+         ========================================= -->
+
+    <footer>
+
+        <p>
+            © 2026 SmartBank. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- =========================================
+         JAVASCRIPT
+         ========================================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Transaction Search - SmartBank Admin</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="nav-logo">
+            SmartBank Admin
+        </div>
+
+        <div class="nav-links">
+
+            <a href="admin-dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="admin-account-status.html">
+                Account Status
+            </a>
+
+            <a href="admin-customer-search.html">
+                Customer Search
+            </a>
+
+            <a href="admin-customer-details.html">
+                Customer Details
+            </a>
+
+            <a href="admin-transaction-search.html">
+                Transaction Search
+            </a>
+
+            <a href="admin-transaction-filter.html">
+                Transaction Filter
+            </a>
+
+            <a href="admin-activity-log.html">
+                Activity Log
+            </a>
+
+            <a href="admin-system-health.html">
+                System Health
+            </a>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a
+                href="#"
+                id="adminLogoutBtn"
+            >
+                Logout
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <main>
+
+        <section class="dashboard-section">
+
+            <div class="dashboard-container">
+
+                <h1>
+                    Transaction Search
+                </h1>
+
+                <p>
+                    Search and view complete transaction details using a transaction ID.
+                </p>
+
+
+                <form
+                    id="adminTransactionSearchForm"
+                    class="dashboard-form"
+                >
+
+                    <label for="searchTransactionId">
+                        Transaction ID
+                    </label>
+
+                    <input
+                        type="text"
+                        id="searchTransactionId"
+                        placeholder="Example: TXN-20260923-0001"
+                    >
+
+                    <button
+                        type="submit"
+                        class="primary-btn"
+                    >
+                        Search Transaction
+                    </button>
+
+                </form>
+
+
+                <p id="transactionSearchMessage"></p>
+
+
+                <div class="dashboard-grid">
+
+                    <div class="dashboard-service-card">
+
+                        <div class="service-icon">
+                            🆔
+                        </div>
+
+                        <h3>
+                            Transaction ID
+                        </h3>
+
+                        <p id="searchTransactionIdResult">
+                            Not available
+                        </p>
+
+                    </div>
+
+
+                    <div class="dashboard-service-card">
+
+                        <div class="service-icon">
+                            👤
+                        </div>
+
+                        <h3>
+                            Customer Name
+                        </h3>
+
+                        <p id="searchTransactionCustomerName">
+                            Not available
+                        </p>
+
+                    </div>
+
+
+                    <div class="dashboard-service-card">
+
+                        <div class="service-icon">
+                            🏦
+                        </div>
+
+                        <h3>
+                            Account Number
+                        </h3>
+
+                        <p id="searchTransactionAccount">
+                            Not available
+                        </p>
+
+                    </div>
+
+
+                    <div class="dashboard-service-card">
+
+                        <div class="service-icon">
+                            💳
+                        </div>
+
+                        <h3>
+                            Transaction Type
+                        </h3>
+
+                        <p id="searchTransactionType">
+                            Not available
+                        </p>
+
+                    </div>
+
+
+                    <div class="dashboard-service-card">
+
+                        <div class="service-icon">
+                            💰
+                        </div>
+
+                        <h3>
+                            Amount
+                        </h3>
+
+                        <p id="searchTransactionAmount">
+                            Not available
+                        </p>
+
+                    </div>
+
+
+                    <div class="dashboard-service-card">
+
+                        <div class="service-icon">
+                            📤
+                        </div>
+
+                        <h3>
+                            Sender Account
+                        </h3>
+
+                        <p id="searchTransactionSender">
+                            Not applicable
+                        </p>
+
+                    </div>
+
+
+                    <div class="dashboard-service-card">
+
+                        <div class="service-icon">
+                            📥
+                        </div>
+
+                        <h3>
+                            Receiver Account
+                        </h3>
+
+                        <p id="searchTransactionReceiver">
+                            Not applicable
+                        </p>
+
+                    </div>
+
+
+                    <div class="dashboard-service-card">
+
+                        <div class="service-icon">
+                            📅
+                        </div>
+
+                        <h3>
+                            Transaction Date
+                        </h3>
+
+                        <p id="searchTransactionDate">
+                            Not available
+                        </p>
+
+                    </div>
+
+
+                    <div class="dashboard-service-card">
+
+                        <div class="service-icon">
+                            ✅
+                        </div>
+
+                        <h3>
+                            Transaction Status
+                        </h3>
+
+                        <p id="searchTransactionStatus">
+                            Not available
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-actions">
+
+                    <a
+                        href="admin-dashboard.html"
+                        class="primary-btn"
+                    >
+                        Back to Admin Dashboard
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 SmartBank. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

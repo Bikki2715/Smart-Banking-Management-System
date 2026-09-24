@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Account Status - SmartBank</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         NAVBAR
+    ========================================== -->
+
+    <nav class="navbar">
+
+        <div class="nav-logo">
+            SmartBank
+        </div>
+
+
+        <div class="nav-links">
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="profile.html">
+                Profile
+            </a>
+
+            <a href="#" id="logoutBtn">
+                Logout
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================================
+         ACCOUNT STATUS SECTION
+    ========================================== -->
+
+    <main>
+
+        <section class="dashboard-section">
+
+            <div class="dashboard-container">
+
+                <h1>
+                    Account Status
+                </h1>
+
+                <p>
+                    View the current status of your SmartBank account.
+                </p>
+
+
+                <div class="dashboard-service-card">
+
+                    <div class="service-icon">
+                        🏦
+                    </div>
+
+                    <h3>
+                        Account Number
+                    </h3>
+
+                    <p id="statusAccountNumber">
+                        Loading...
+                    </p>
+
+                </div>
+
+
+                <div class="dashboard-service-card">
+
+                    <div class="service-icon">
+                        🟢
+                    </div>
+
+                    <h3>
+                        Current Status
+                    </h3>
+
+                    <p id="accountStatus">
+                        Loading...
+                    </p>
+
+                </div>
+
+
+                <p id="statusMessage"></p>
+
+
+                <br>
+
+
+                <a
+                    href="dashboard.html"
+                    class="dashboard-btn"
+                >
+                    Back to Dashboard
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer>
+
+        <p>
+            © 2026 SmartBank. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

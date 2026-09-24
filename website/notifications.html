@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Notifications | SmartBank</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body class="dashboard-page">
+
+
+    <!-- ================================
+         NAVBAR
+    ================================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🏦 SmartBank
+        </div>
+
+        <div class="nav-links">
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="login.html">
+                Logout
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- ================================
+         NOTIFICATIONS
+    ================================= -->
+
+    <main class="dashboard-main">
+
+        <section class="dashboard-welcome">
+
+            <p class="dashboard-label">
+                SMARTBANK
+            </p>
+
+            <h1>
+                Notifications 🔔
+            </h1>
+
+            <p>
+                Stay updated with your banking activities.
+            </p>
+
+        </section>
+
+
+
+        <!-- ACCOUNT INFORMATION -->
+
+        <section class="account-overview">
+
+            <div class="account-card">
+
+                <div class="account-icon">
+                    👤
+                </div>
+
+                <p>
+                    Account Number
+                </p>
+
+                <h2 id="notificationAccountNumber">
+                    Loading...
+                </h2>
+
+            </div>
+
+
+            <div class="account-card">
+
+                <div class="account-icon">
+                    🔔
+                </div>
+
+                <p>
+                    Total Notifications
+                </p>
+
+                <h2 id="notificationCount">
+                    0
+                </h2>
+
+            </div>
+
+
+            <div class="account-card">
+
+                <div class="account-icon">
+                    📩
+                </div>
+
+                <p>
+                    Unread Notifications
+                </p>
+
+                <h2 id="unreadNotificationCount">
+                    0
+                </h2>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- NOTIFICATION LIST -->
+
+        <section class="dashboard-services">
+
+            <div class="dashboard-services-title">
+
+                <span>
+                    ACCOUNT UPDATES
+                </span>
+
+                <h2>
+                    Your Notifications
+                </h2>
+
+            </div>
+
+
+            <div
+                id="notificationList"
+                class="transaction-list"
+            >
+
+                <p>
+                    Loading notifications...
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- BACK BUTTON -->
+
+        <div class="dashboard-back">
+
+            <a href="dashboard.html">
+                ← Back to Dashboard
+            </a>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- ================================
+         FOOTER
+    ================================= -->
+
+    <footer class="dashboard-footer">
+
+        <p>
+            © 2026 SmartBank. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

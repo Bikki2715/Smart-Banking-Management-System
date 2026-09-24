@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Customer Search - SmartBank</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="nav-logo">
+            SmartBank Admin
+        </div>
+
+        <div class="nav-links">
+
+            <a href="admin-dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="admin-account-status.html">
+                Account Status
+            </a>
+
+            <a href="admin-activity-log.html">
+                Activity Log
+            </a>
+
+            <a href="admin-system-health.html">
+                System Health
+            </a>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="#" id="adminLogoutBtn">
+                Logout
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <main>
+
+        <section class="dashboard-section">
+
+            <div class="dashboard-container">
+
+                <h1>
+                    Customer Search
+                </h1>
+
+                <p>
+                    Search for a customer using their account number.
+                </p>
+
+
+                <form id="adminCustomerSearchForm">
+
+                    <input
+                        type="number"
+                        id="searchCustomerAccount"
+                        placeholder="Enter account number"
+                        required
+                    >
+
+                    <button
+                        type="submit"
+                        class="dashboard-btn"
+                    >
+                        Search Customer
+                    </button>
+
+                </form>
+
+
+                <p id="customerSearchMessage"></p>
+
+
+                <div class="dashboard-grid">
+
+
+                    <div class="dashboard-service-card">
+
+                        <div class="service-icon">
+                            👤
+                        </div>
+
+                        <h3>
+                            Customer Name
+                        </h3>
+
+                        <p id="searchCustomerName">
+                            Not selected
+                        </p>
+
+                    </div>
+
+
+                    <div class="dashboard-service-card">
+
+                        <div class="service-icon">
+                            🏦
+                        </div>
+
+                        <h3>
+                            Account Number
+                        </h3>
+
+                        <p id="searchCustomerAccountNumber">
+                            Not selected
+                        </p>
+
+                    </div>
+
+
+                    <div class="dashboard-service-card">
+
+                        <div class="service-icon">
+                            📧
+                        </div>
+
+                        <h3>
+                            Email
+                        </h3>
+
+                        <p id="searchCustomerEmail">
+                            Not selected
+                        </p>
+
+                    </div>
+
+
+                    <div class="dashboard-service-card">
+
+                        <div class="service-icon">
+                            📱
+                        </div>
+
+                        <h3>
+                            Mobile
+                        </h3>
+
+                        <p id="searchCustomerMobile">
+                            Not selected
+                        </p>
+
+                    </div>
+
+
+                    <div class="dashboard-service-card">
+
+                        <div class="service-icon">
+                            💰
+                        </div>
+
+                        <h3>
+                            Balance
+                        </h3>
+
+                        <p id="searchCustomerBalance">
+                            Not selected
+                        </p>
+
+                    </div>
+
+
+                    <div class="dashboard-service-card">
+
+                        <div class="service-icon">
+                            🟢
+                        </div>
+
+                        <h3>
+                            Account Status
+                        </h3>
+
+                        <p id="searchCustomerStatus">
+                            Not selected
+                        </p>
+
+                    </div>
+
+
+                    <div class="dashboard-service-card">
+
+                        <div class="service-icon">
+                            📅
+                        </div>
+
+                        <h3>
+                            Created At
+                        </h3>
+
+                        <p id="searchCustomerCreatedAt">
+                            Not selected
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+                <br>
+
+
+                <a
+                    href="admin-dashboard.html"
+                    class="dashboard-btn"
+                >
+                    Back to Admin Dashboard
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 SmartBank. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
