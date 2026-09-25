@@ -9,8 +9,12 @@ import os
 
 load_dotenv()
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder="website", static_url_path="")
 CORS(app)
+
+@app.route("/")
+def home():
+    return app.send_static_file("index.html")
 
 # =========================================
 # DATABASE CONNECTION
@@ -41,13 +45,6 @@ def get_db_connection():
 # BACKEND TEST ROUTE
 # =========================================
 
-@app.route("/")
-def home():
-
-    return jsonify({
-        "status": "success",
-        "message": "SmartBank Backend is running."
-    })
 
 
 # =========================================
