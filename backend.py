@@ -16,26 +16,26 @@ CORS(app)
 # DATABASE CONNECTION
 # =========================================
 def get_db_connection():
-
     try:
+        database_url = os.getenv("DATABASE_URL")
 
-        connection = psycopg2.connect(
-            host=os.getenv("DB_HOST"),
-            database=os.getenv("DB_NAME"),
-            user=os.getenv("DB_USER"),
-            password=os.getenv("DB_PASSWORD"),
-            port=os.getenv("DB_PORT")
-        )
+        if database_url:
+            connection = psycopg2.connect(database_url)
+        else:
+            connection = psycopg2.connect(
+                host=os.getenv("DB_HOST"),
+                database=os.getenv("DB_NAME"),
+                user=os.getenv("DB_USER"),
+                password=os.getenv("DB_PASSWORD"),
+                port=os.getenv("DB_PORT")
+            )
 
         return connection
 
     except psycopg2.Error as error:
-
         print("\nDatabase connection error:")
         print(error)
-
         return None
-
 
 # =========================================
 # BACKEND TEST ROUTE
