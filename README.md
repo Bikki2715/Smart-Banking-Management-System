@@ -2,8 +2,7 @@
 
 A full-stack banking management system built with Python, Flask, PostgreSQL, HTML, CSS, and JavaScript.
 
-# Website URL
-https://smart-banking-management-system-jz7x.onrender.com
+
 
 ## Features
 
