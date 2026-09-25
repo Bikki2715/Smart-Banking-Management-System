@@ -243,7 +243,7 @@ if (loginForm) {
             try {
 
                 const response = await fetch(
-                    "http://127.0.0.1:50001/api/login",
+                    "/api/login",
                     {
                         method: "POST",
 
@@ -620,7 +620,7 @@ if (registerForm) {
             try {
 
                 const response = await fetch(
-                    "http://127.0.0.1:50001/api/register",
+                    "/api/register",
                     {
                         method: "POST",
 
@@ -1184,7 +1184,7 @@ if (
     if (accountNumber) {
 
         fetch(
-            "http://127.0.0.1:50001/api/customer/" +
+            "/api/customer/" +
             accountNumber
         )
 
@@ -1313,7 +1313,7 @@ if (
     } else {
 
         fetch(
-            "http://127.0.0.1:50001/api/customer/" +
+            "/api/customer/" +
             accountNumber
         )
 
@@ -1469,7 +1469,7 @@ if (depositForm) {
 
                     const response =
                         await fetch(
-                            "http://127.0.0.1:50001/api/deposit",
+                            "/api/deposit",
                             {
                                 method: "POST",
 
@@ -1679,7 +1679,7 @@ if (withdrawForm) {
 
                 const response =
                     await fetch(
-                        "http://127.0.0.1:50001/api/withdraw",
+                        "/api/withdraw",
                         {
                             method: "POST",
 
@@ -2559,7 +2559,7 @@ if (transferForm) {
             }
             // Send transfer request
             fetch(
-                "http://127.0.0.1:50001/api/transfer",
+                "/api/transfer",
                 {
                     method: "POST",
 
@@ -2942,7 +2942,7 @@ if (adminStatusForm) {
             }
 
             fetch(
-                "http://127.0.0.1:50001/api/admin/change-account-status",
+                "/api/admin/change-account-status",
                 {
                     method: "POST",
 
@@ -3136,7 +3136,7 @@ if (adminLoginForm) {
 
 
             fetch(
-                "http://127.0.0.1:50001/api/admin/login",
+                "/api/admin/login",
                 {
                     method: "POST",
 
@@ -3282,7 +3282,7 @@ if (adminActivityContainer) {
     } else {
 
         fetch(
-            "http://127.0.0.1:50001/api/admin/activity-log"
+            "/api/admin/activity-log"
         )
 
         .then(response =>
@@ -3418,7 +3418,7 @@ if (
 ) {
 
     fetch(
-        "http://127.0.0.1:50001/api/admin/dashboard-statistics"
+        "/api/admin/dashboard-statistics"
     )
 
     .then(response =>
@@ -3589,7 +3589,7 @@ if (
 ) {
 
     fetch(
-        "http://127.0.0.1:50001/api/admin/system-health"
+        "/api/admin/system-health"
     )
 
     .then(response =>
@@ -4593,7 +4593,7 @@ if (bankingSummaryPage) {
 
 
         fetch(
-            "http://127.0.0.1:50001/api/admin/banking-summary"
+            "/api/admin/banking-summary"
         )
 
         .then(response =>
@@ -4809,7 +4809,7 @@ if (changePasswordForm) {
                 "Changing password...";
 
             fetch(
-                "http://127.0.0.1:50001/api/change-password",
+                "/api/change-password",
                 {
                     method: "POST",
 
