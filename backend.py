@@ -3921,11 +3921,9 @@ def export_account_statement_api(account_no):
 # =========================================
 # START SERVER
 # =========================================
-
 if __name__ == "__main__":
-
     app.run(
-        host="127.0.0.1",
-        port=50001,
-        debug=True
+        host="0.0.0.0",
+        port=int(os.getenv("PORT", 50001)),
+        debug=False
     )
