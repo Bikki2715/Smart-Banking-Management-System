@@ -51,23 +51,6 @@ A full-stack banking management system built with Python, Flask, PostgreSQL, HTM
 - bcrypt
 - python-dotenv
 
-## Security
-
-- Database credentials are stored using environment variables.
-- .env is excluded from Git using .gitignore.
-- Passwords are securely hashed.
-- Customer and admin pages include access protection.
-
-## Database
-
-#The application uses PostgreSQL with tables for:
-
-- Customers
-- Transactions
-- Notifications
-- Admin Activuty
-
-
 
 ## Project Structure
 
@@ -111,7 +94,30 @@ Smart Banking Management System/
     ├── script.js
     └── assets/
 
+```
 
+````markdown
+## Security
+
+- Database credentials are stored using environment variables.
+- `.env` is excluded from Git using `.gitignore`.
+- Passwords are securely hashed.
+- Customer and admin pages include access protection.
+
+## Database
+
+The application uses PostgreSQL with tables for:
+
+- Customers
+- Transactions
+- Notifications
+- Admin Activity
+
+## Author
+
+**Bikki Dhanalakshmi**
+
+BTech Computer Science Engineering
 
 
 
